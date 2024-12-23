@@ -1,4 +1,4 @@
 My sem 5's expts
 3rd year
 dbms and os
-more expts  coming soon..
+all expts uploaded which I have coded on my own.
