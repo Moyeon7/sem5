@@ -1,3 +1,4 @@
+//old version of fcfs
 #include<stdio.h>
 #define max 12
 int Ct[max], TAT[max], Wt[max];
