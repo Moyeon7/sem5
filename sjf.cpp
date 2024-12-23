@@ -24,14 +24,16 @@ void cal(int n, float At[], float Bt[]){
 void sort(int n, float At[], float Bt[], int P[]){
     int temp, check = 0, track = At[0];
 
-    for (int k = 0; k < n - 1; k++){
-        if (At[k + 1] != track)
+    for (int k = 0; k < n - 1; k++){    //check if any 2 or more processes have the same arrival time if not then put check=1
+        if (At[k + 1] != At[k])
             check = 1;
         track = At[k];
     }
+
+    //sort the processes based on burst time when they have the same arrival time
     for (int i = 0; i < n; i++){
         for (int j = i + 1; j < n; j++){
-            if (Bt[i] > Bt[j] && check == 0){
+            if (Bt[i] > Bt[j] && check == 0){   //same arrival time; sort by burst time
                 temp = At[i];
                 At[i] = At[j];
                 At[j] = temp;
