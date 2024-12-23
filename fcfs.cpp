@@ -1,3 +1,4 @@
+//updated version of FCFS
 #include <iostream>
 using namespace std;
 #define max 12
